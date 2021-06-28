@@ -1,0 +1,22 @@
+//que: Given an array of size N containing only 0s, 1s, and 2s; sort the array in ascending order.
+class Solution
+{
+    public static void sort012(int a[], int n)
+    {
+    
+    boolean sorted = false;
+    int temp;
+    while(!sorted) {
+        sorted = true;
+        for (int i = 0; i < n-1; i++) {
+            if (a[i] > a[i+1]) {
+                temp = a[i];
+                a[i] = a[i+1];
+                a[i+1] = temp;
+                sorted = false;
+            }
+        }
+    }
+              
+              }
+}
